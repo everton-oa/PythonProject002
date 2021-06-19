@@ -10,7 +10,7 @@ class CustomerPage(BasePage):
         self.LOGIN_BUTTON = (By.CSS_SELECTOR, Customer.LOGIN_BUTTON)
 
     def select_user(self, user_name):
-        ...
+        self.select(self.USERSELECT_SELECT, user_name)
 
     def login(self):
         self.click(self.LOGIN_BUTTON)
