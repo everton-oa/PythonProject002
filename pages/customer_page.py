@@ -1,5 +1,5 @@
 from pages.base_page import BasePage
-from locators.locators import Customer, Home
+from locators.locators import Customer
 from selenium.webdriver.common.by import By
 
 

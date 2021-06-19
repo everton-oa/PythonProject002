@@ -1,3 +1,4 @@
+from pages.account_page import AccountPage
 from tests.test_base import BaseTest
 from pages.home_page import HomePage
 from pages.customer_page import CustomerPage
@@ -12,4 +13,6 @@ class TestHomePage(BaseTest):
         self.customer_page = CustomerPage(self.driver)
         self.customer_page.select_user("Harry Potter")
         self.customer_page.login()
+        self.account_page = AccountPage(self.driver)
+        # assert self.account_page.get_welcome_username == "Harry Potter"
         time.sleep(1)

@@ -10,3 +10,7 @@ class NavBar:
 class Customer:
     USERSELECT_SELECT = "select[name='userSelect']"
     LOGIN_BUTTON = "button[type='submit']"
+
+
+class Account:
+    WELCOME_USER_NAME = "span[class='fontBig ng-binding']"
