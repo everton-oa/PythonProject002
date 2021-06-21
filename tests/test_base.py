@@ -1,6 +1,6 @@
-import pytest
+from pytest import mark
 
 
-@pytest.mark.usefixtures("init_browser")
+@mark.usefixtures("init_browser")
 class BaseTest:
     pass
